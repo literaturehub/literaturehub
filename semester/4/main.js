@@ -9,17 +9,17 @@ $(".canvas").click(function() {
 })
 
 $(".books").click(function(){
-    window.location.href = "https://yogesh-hacker.github.io/yogesh-hacker/semester/4/books/";
+    window.location.href = "books/";
 })
 
 $(".notes").click(function(){
-    window.location.href = "https://yogesh-hacker.github.io/yogesh-hacker/semester/4/notes/";
+    window.location.href = "notes/";
 })
 
 $(".syllabus").click(function(){
-    window.location.href = "https://yogesh-hacker.github.io/yogesh-hacker/semester/4/syllabus/";
+    window.location.href = "syllabus/";
 })
 
 $(".past-papers").click(function(){
-    window.location.href = "https://yogesh-hacker.github.io/yogesh-hacker/semester/4/past-papers/";
+    window.location.href = "past-papers/";
 })
