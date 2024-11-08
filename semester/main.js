@@ -12,15 +12,15 @@ $(".item").click(function(){
     var semester = $(this).attr('class').match(/semester-\d+/)[0];
     var semesterNum = semester.split('-')[1];
     if (semesterNum == 1) {
-        window.location.href = "https://yogesh-hacker.github.io/yogesh-hacker/semester/demo/1";
+        window.location.href = "https://literaturehub.github.io/literaturehub/semester/demo/1";
     } else if (semesterNum == 2) {
-        window.location.href = "https://yogesh-hacker.github.io/yogesh-hacker/semester/demo/2";
+        window.location.href = "https://literaturehub.github.io/literaturehub/semester/demo/2";
     } else if (semesterNum == 5) {
-        window.location.href = "https://yogesh-hacker.github.io/yogesh-hacker/semester/5/";
+        window.location.href = "https://literaturehub.github.io/literaturehub/semester/5/";
     } else if(semesterNum == 4) {
-           window.location.href = "https://yogesh-hacker.github.io/yogesh-hacker/semester/4/";
+           window.location.href = "https://literaturehub.github.io/literaturehub/semester/4/";
     }
     else {
-        window.location.href = "https://yogesh-hacker.github.io/yogesh-hacker/semester/demo/coming-soon/";
+        window.location.href = "https://literaturehub.github.io/literaturehub/semester/demo/coming-soon/";
     }
 });
