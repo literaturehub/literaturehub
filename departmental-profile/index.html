@@ -72,6 +72,35 @@
             border-radius: 10px;
         }
 
+        /* Faculty Section Styling */
+        .faculty-member {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .faculty-photo {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 3px solid #6a11cb;
+            transition: transform 0.2s;
+        }
+
+        .faculty-photo:hover {
+            transform: scale(1.05);
+        }
+
+        .faculty-name {
+            font-size: 1.5rem;
+            color: #2575fc;
+            margin-top: 15px;
+        }
+
+        .faculty-title {
+            font-size: 1rem;
+            color: #555;
+        }
+
         /* Animations */
 @keyframes fadeInUp {
             from {
@@ -174,11 +203,34 @@
         <!-- Faculty Highlights Section -->
         <div id="faculty" class="content-section mt-5 animate__animated animate__fadeInLeft animate__delay-2s">
             <h2 class="section-header">Meet Our Faculty</h2>
-            <p>
-                Our dedicated faculty members are accomplished scholars and passionate educators, committed to providing high-quality instruction and mentorship.
-            </p>
+            <div class="row">
+                <!-- Faculty Member 1 -->
+                <div class="col-md-4 faculty-member animate__animated animate__zoomIn animate__delay-2s">
+                    <img src="PC.jpg" alt="Faculty Member 1" class="faculty-photo">
+                    <h3 class="faculty-name">Dr. Pritesh Chakraborty</h3>
+                    <p class="faculty-title">
+                        Assistant
+                        Professor<br>M.A., M.Phil., PhD
+                    </p>
+                </div>
+                <!-- Faculty Member 2 -->
+                <div class="col-md-4 faculty-member animate__animated animate__zoomIn animate__delay-3s">
+                    <img src="RD.jpg" alt="Faculty Member 2" class="faculty-photo">
+                    <h3 class="faculty-name">Mr. Ramprasad Dutta</h3>
+                    <p class="faculty-title">
+                        SACT<br>M.A., B.Ed, NET, SET, GATE, PhD(Pursuing)
+                    </p>
+                </div>
+                <!-- Faculty Member 3 -->
+                <div class="col-md-4 faculty-member animate__animated animate__zoomIn animate__delay-4s">
+                    <img src="SG.jpg" alt="Faculty Member 3" class="faculty-photo">
+                    <h3 class="faculty-name">Mr. Subhro Ghosh</h3>
+                    <p class="faculty-title">
+                        SACT<br>M.A., NET
+                    </p>
+                </div>
+            </div>
         </div>
-
         <!-- Departmental Library Section -->
         <div id="departmentalLibrary" class="content-section mt-5 animate__animated animate__fadeInRight animate__delay-3s">
             <h2 class="section-header">Departmental Library</h2>
