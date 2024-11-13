@@ -2,82 +2,76 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="refresh" content="0; URL='https://literaturehub.github.io/literaturehub/departmental-profile/'">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <title>Departmental Profile</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#1A1A1A">
+    <meta http-equiv='X-UA-Compatible' content='ie=edge'>
+    <title>Follow Our Department</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel='stylesheet' href='https://site-assets.fontawesome.com/releases/v6.4.2/css/all.css' type='text/css' media='all' />
+    <!-- Google Fonts for unique typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Raleway:wght@600&display=swap" rel="stylesheet">
     <style>
-        /* Background Gradient */
+        /* Darker gradient background */
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #a8edea, #fed6e3);
-            color: #333;
+            background: linear-gradient(135deg, #000000, #1a1a1a, #000000);
+            font-family: 'Poppins', sans-serif;
+            color: #ccc;
             overflow-x: hidden;
         }
 
-        /* Container Styling */
-        .container {
-            max-width: 900px;
-            margin: 60px auto;
-            padding: 30px;
-            background: #ffffff;
-            border-radius: 15px;
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-            animation: fadeInUp 1s ease;
-        }
-
-        /* Header Styling */
-        .section-header {
-            font-size: 2.5rem;
-            margin-bottom: 30px;
-            color: #007bff;
-            background: -webkit-linear-gradient(#6a11cb, #2575fc);
+        /* Header styling with soft, dark glow */
+        h1 {
+            font-family: 'Raleway', sans-serif;
+            font-weight: 700;
+            color: #fff;
+            text-align: center;
+            text-shadow: 0 4px 12px rgba(255, 255, 255, 0.1);
+            background: linear-gradient(90deg, #666, #fff);
+            background-size: 200%;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-            text-shadow: 0 2px 4px rgba(0, 123, 255, 0.3);
-            transition: transform 0.3s;
+            animation: gradientText 2s infinite alternate;
         }
 
-        .section-header:hover {
-            transform: scale(1.05);
+        /* Gradient text animation */
+@keyframes gradientText {
+            0% {
+                background-position: 0%;
+            }
+            100% {
+                background-position: 100%;
+            }
         }
 
-        /* Button Styling */
-        .btn-custom {
-            background: linear-gradient(135deg, #6a11cb, #2575fc);
+        /* Glassmorphism card style */
+        .card {
+            background: rgba(255, 255, 255, 0.1);
+            /* Lighter opacity glass */
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            border-radius: 15px;
             color: #fff;
-            font-size: 1.2rem;
-            padding: 15px;
-            border-radius: 50px;
-            transition: transform 0.3s, box-shadow 0.3s;
-            width: 70%;
-            text-align: center;
-            display: block;
-            margin-bottom: 10px;
-            text-decoration: none;
-            -webkit-tap-highlight-color: transparent;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
+            /* Realistic shadow effect */
+            transition: transform 0.6s ease, box-shadow 0.4s ease;
+            overflow: hidden;
+            animation: cardIn 0.8s ease forwards;
         }
 
-        /* Button Hover Effect */
-        .btn-custom:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 8px 16px rgba(0, 123, 255, 0.3);
+
+        .card:hover {
+            transform: scale(0.95) rotateY(180deg);
+            /* Flip 180 degrees */
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 1);
         }
 
-        /* Section Content Styling */
-        .content-section {
-            padding: 20px;
-            margin-top: 30px;
-            background: linear-gradient(135deg, #f9f7fa, #e1ecf5);
-            border-radius: 10px;
-        }
-
-        /* Animations */
-@keyframes fadeInUp {
+        /* Card entrance animation */
+@keyframes cardIn {
             from {
                 opacity: 0;
-                transform: translateY(20px);
+                transform: translateY(50px);
             }
             to {
                 opacity: 1;
@@ -85,138 +79,110 @@
             }
         }
 
-        /* Contact Form Styling */
-        .form-control {
-            border-radius: 25px;
-            padding: 10px 20px;
-            margin-bottom: 15px;
-            transition: all 0.3s ease;
-            border: 2px solid #e1ecf5;
-            outline: none;
-            box-shadow: none;
+
+        /* Social icon styling with cool tones */
+        .social-icon {
+            font-size: 3rem;
+            color: #888;
+            transition: color 0.3s, transform 0.3s;
         }
 
-        .form-control:focus {
-            border-color: #6a11cb;
-            box-shadow: 0 0 5px rgba(106, 17, 203, 0.5);
-            transform: translateY(-3px);
+        /* Social icon hover effect with color shift */
+        .card:hover .social-icon {
+            color: #ddd;
+            transform: rotate(360deg) scale(0.8);
         }
 
-        .btn-submit {
-            background: linear-gradient(135deg, #2575fc, #6a11cb);
-            color: white;
-            transition: all 0.3s ease;
-            border-radius: 25px;
-            padding: 12px 20px;
+        /* Dark button with a consistent gradient */
+        .visit-btn {
+            font-family: 'Raleway', sans-serif;
+            font-size: 1rem;
+            color: #fff;
+            background: linear-gradient(90deg, #444, #666);
+            border-radius: 30px;
+            padding: 10px 25px;
+            text-transform: uppercase;
+            font-weight: bold;
+            overflow: hidden;
+            position: relative;
+            z-index: 1;
             border: none;
+            transition: background-color 0.4s, transform 0.3s;
+            box-shadow: 0 4px 15px rgba(255, 255, 255, 0.1);
         }
 
-        .btn-submit:hover {
-            background: linear-gradient(135deg, #6a11cb, #2575fc);
-            transform: translateY(-3px);
-            box-shadow: 0 8px 16px rgba(0, 123, 255, 0.3);
+        /* Button hover with neon effect */
+        .visit-btn::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 300%;
+            height: 300%;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            transform: translate(-50%, -50%) scale(0);
+            transition: transform 0.5s;
+            z-index: -1;
         }
 
-        /* Placeholder Animation */
-        .form-control::placeholder {
-            color: #aaa;
-            transition: color 0.3s ease;
+        .visit-btn:hover::before {
+            transform: translate(-50%, -50%) scale(1);
         }
 
-        .form-control:focus::placeholder {
-            color: transparent;
-        }
-
-        /* Footer Styling */
-        footer {
-            margin-top: 30px;
-            padding: 20px;
-            background: #007bff;
-            color: white;
-            border-radius: 10px;
-            text-align: center;
+        /* Button hover */
+        .visit-btn:hover {
+            background: linear-gradient(90deg, #777, #999);
+            transform: scale(1.05);
         }
     </style>
 </head>
 <body>
-    <!-- Main Container -->
-    <div class="container text-center animate__animated animate__fadeInUp">
-        <h1 class="section-header">Departmental Profile</h1>
-        <p class="animate__animated animate__fadeInDown animate__delay-1s">
-            Explore the Department of English and learn about our mission, faculty, and resources.
-        </p>
-
-        <!-- Button Links Centered -->
-        <div class="row justify-content-center gap-3 mt-4">
-            <div class="col-md-5 d-flex justify-content-center">
-                <a href="about-us/" class="btn btn-custom animate__animated animate__zoomIn animate__delay-1s">Learn More About Us</a>
-            </div>
-            <div class="col-md-5 d-flex justify-content-center">
-                <a href="https://drive.google.com/drive/folders/1VueNLeYeRLuV9ds9o_RH4BKczmEVceCK?usp=sharing" class="btn btn-custom animate__animated animate__zoomIn animate__delay-1s">Departmental Library</a>
-            </div>
-        </div>
-
-        <!-- Department Overview Section -->
-        <div id="departmentOverview" class="content-section mt-5 animate__animated animate__fadeInLeft">
-            <h2 class="section-header">Department Overview</h2>
-            <p>
-                The Department of English fosters a rich environment for academic inquiry and creativity, offering a variety of programs that prepare students for diverse career paths.
-            </p>
-        </div>
-
-        <!-- Our Mission Section -->
-        <div id="mission" class="content-section mt-5 animate__animated animate__fadeInRight animate__delay-1s">
-            <h2 class="section-header">Our Mission</h2>
-            <p>
-                Establish the department as an autonomous unit of the institution and launch a post graduate course in English in the next five to six years.
-            </p>
-        </div>
-
-        <!-- Faculty Highlights Section -->
-        <div id="faculty" class="content-section mt-5 animate__animated animate__fadeInLeft animate__delay-2s">
-            <h2 class="section-header">Meet Our Faculty</h2>
-            <p>
-                Our dedicated faculty members are accomplished scholars and passionate educators, committed to providing high-quality instruction and mentorship.
-            </p>
-        </div>
-
-        <!-- Departmental Library Section -->
-        <div id="departmentalLibrary" class="content-section mt-5 animate__animated animate__fadeInRight animate__delay-3s">
-            <h2 class="section-header">Departmental Library</h2>
-            <p>
-                The Departmental Library boasts an extensive collection of literature and resources, supporting students in their academic pursuits and research projects.
-            </p>
-        </div>
-
-        <!-- Contact Us Section -->
-        <div id="contact" class="content-section mt-5 animate__animated animate__fadeInDown animate__delay-4s">
-            <h2 class="section-header">Get in Touch</h2>
-            <p>
-                For inquiries or further information, feel free to reach out to us!
-            </p>
-            <form>
-                <div class="mb-3">
-                    <input type="text" class="form-control" placeholder="Your Name">
-                </div>
-                <div class="mb-3">
-                    <input type="email" class="form-control" placeholder="Your Email">
-                </div>
-                <div class="mb-3">
-                    <textarea class="form-control" rows="4" placeholder="Your Message"></textarea>
-                </div>
-                <button type="submit" class="btn btn-submit w-100">Send Message</button>
-            </form>
+    <div class="container my-5">
+        <h1>Connect with Our Department</h1>
+        <div class="row mt-5" id="socialLinksContainer">
+            <!-- Social media cards will be dynamically inserted here -->
         </div>
     </div>
 
-    <!-- Footer -->
-    <footer class="animate__animated animate__fadeInUp">
-        <p>
-            &copy; 2024 Department of English. All rights reserved.
-        </p>
-    </footer>
+    <!-- JavaScript to load JSON data and create cards -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // Social links JSON data
+            const socialLinks = [{
+                name: "Facebook", url: "https://www.facebook.com/groups/228825369177695/?ref=share&mibextid=NSMWBT", icon: "fab fa-facebook"
+            },
+                {
+                    name: "Instagram", url: "https://www.instagram.com/englishassm", icon: "fab fa-instagram"
+                },
+                {
+                    name: "YouTube", url: "https://youtube.com/@departmentofenglishassm", icon: "fab fa-youtube"
+                },
+                {
+                    name: "X", url: "https://example.com", icon: "fab fa-x-twitter"
+                },
+                {
+                    name: "Linkedin", url: "https://in.linkedin.com/in/dept-of-english-assm-8008b5314", icon: "fab fa-linkedin"
+                }];
 
-    <!-- Bootstrap and Animation Scripts -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+            const container = document.getElementById("socialLinksContainer");
+            socialLinks.forEach(link => {
+                const card = document.createElement("div");
+                card.classList.add("col-md-3", "mb-4");
+                card.innerHTML = `
+                <div class="card text-center p-4">
+                <i class="social-icon ${link.icon}"></i>
+                <h5 class="card-title mt-3">${link.name}</h5>
+                <a href="${link.url}" target="_blank" class="btn visit-btn mt-3">Visit</a>
+                </div>
+                `;
+                container.appendChild(card);
+            });
+        });
+    </script>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
 </body>
 </html>
