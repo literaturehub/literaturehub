@@ -9,19 +9,19 @@ $(".canvas").click(function() {
 })
 
 $(".cc-8").click(function() {
-    window.location.href = "https://yogesh-hacker.github.io/yogesh-hacker/semester/4/notes/papers/8/";
+    window.location.href = "papers/8/";
 })
 
 $(".cc-9").click(function() {
-    window.location.href = "https://yogesh-hacker.github.io/yogesh-hacker/semester/4/notes/papers/9/";
+    window.location.href = "papers/9/";
 })
 
 $(".cc-10").click(function() {
-    window.location.href = "https://yogesh-hacker.github.io/yogesh-hacker/semester/4/notes/papers/10/";
+    window.location.href = "papers/10/";
 })
 
 $(".sec-2").click(function() {
-    window.location.href = "https://yogesh-hacker.github.io/yogesh-hacker/semester/4/notes/papers/sec-2/";
+    window.location.href = "papers/sec-2/";
 })
 
 $("#notes-theme").change(function() {
