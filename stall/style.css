@@ -1,0 +1,216 @@
+/* Importing custom fonts */
+@font-face {
+    font-family: "Harry Potter";
+    src: url("harryp.ttf");
+}
+
+/* General Styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    background: linear-gradient(135deg, #1c1c1c, #3b2d66);
+    color: #fff;
+    overflow-x: hidden;
+}
+
+/* Container */
+.container {
+    text-align: center;
+    padding: 2rem;
+    position: relative;
+}
+
+/* Header Section */
+.magic-header h1 {
+    font-family: "Harry Potter", serif;
+    font-size: 3rem;
+    /* Reduced font size */
+    color: #f5e050;
+    text-shadow: 0px 0px 10px #f5e050, 0px 0px 20px #ffd700;
+    animation: glow 3s infinite;
+}
+
+.subtitle {
+    font-family: "Cinzel", serif;
+    font-size: 1.3rem;
+    /* Reduced font size */
+    margin-top: -10px;
+    color: #bbb;
+    text-shadow: 0px 0px 5px #fff;
+}
+
+/* Magic Wand Animation */
+.magic-wand {
+    position: absolute;
+    top: 10%;
+    left: 15%;
+    animation: wandMove 5s infinite;
+}
+
+.magic-wand img {
+    width: 80px;
+    transform: rotate(-45deg);
+}
+
+/* Story Section */
+.story {
+    padding: 2rem 1rem;
+    background: rgba(255, 255, 255, 0.1);
+    margin: 2rem auto;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    animation: fadeIn 2s ease-in-out;
+}
+
+.story h2 {
+    font-family: "Cinzel", serif;
+    font-size: 1.8rem;
+    /* Reduced font size */
+    color: #ffd700;
+    text-shadow: 0px 0px 10px #ffd700;
+}
+
+.story p {
+    font-family: "Cinzel", serif;
+    font-size: 1rem;
+    /* Reduced font size */
+    line-height: 1.8;
+    text-align: justify;
+}
+
+/* Additional Sections */
+.extra-content,
+.characters,
+.quotes {
+    margin: 2rem auto;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 1.5rem;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    animation: fadeIn 2.5s ease-in-out;
+}
+
+.extra-content h2,
+.characters h2,
+.quotes h2 {
+    font-family: "Cinzel", serif;
+    font-size: 1.6rem;
+    /* Reduced font size */
+    color: #ffd700;
+    text-shadow: 0px 0px 10px #ffd700;
+}
+
+.extra-content p,
+.characters p,
+.quotes p {
+    font-family: "Cinzel", serif;
+    font-size: 0.9rem;
+    /* Reduced font size */
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.characters ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.characters li {
+    font-family: "Cinzel", serif;
+    font-size: 1rem;
+    margin: 0.5rem 0;
+}
+
+/* Trailer Section */
+.trailer {
+    margin: 2rem auto;
+}
+
+.trailer h2 {
+    font-family: "Cinzel", serif;
+    font-size: 1.6rem;
+    /* Reduced font size */
+    color: #ffd700;
+    text-shadow: 0px 0px 10px #ffd700;
+}
+
+.trailer-box {
+    width: 90%;
+    max-width: 800px;
+    height: 180px;
+    margin: 0 auto;
+    border: 5px solid #f5e050;
+    box-shadow: 0px 0px 20px #f5e050;
+    border-radius: 10px;
+    overflow: hidden;
+    animation: fadeIn 3s ease-in-out;
+}
+
+/* Call to Action */
+.cta {
+    margin-top: 1rem;
+}
+
+.explore-button {
+    background: #f5e050;
+    color: #000;
+    padding: 0.7rem 1.5rem;
+    font-family: "Cinzel", serif;
+    font-size: 1rem;
+    /* Reduced font size */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.explore-button:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 10px #f5e050;
+}
+
+/* Footer */
+.magic-footer {
+    margin-top: 2rem;
+    font-family: "Cinzel", serif;
+    font-size: 0.9rem;
+    /* Reduced font size */
+    color: #bbb;
+}
+
+/* Keyframe Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes glow {
+    0% {
+        text-shadow: 0px 0px 5px #f5e050;
+    }
+    50% {
+        text-shadow: 0px 0px 20px #f5e050;
+    }
+    100% {
+        text-shadow: 0px 0px 5px #f5e050;
+    }
+}
+
+@keyframes wandMove {
+    0%, 100% {
+        top: 10%;
+        left: 15%;
+    }
+    50% {
+        top: 15%;
+        left: 20%;
+        transform: rotate(20deg);
+    }
+}
