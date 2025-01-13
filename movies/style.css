@@ -1,0 +1,120 @@
+/* General Styling */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f9f9f9;
+    /* Light background */
+    color: #333;
+    /* Dark text for contrast */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Container Styling */
+.player-container {
+    width: 90%;
+    max-width: 800px;
+    text-align: center;
+    padding: 20px;
+    background: #ffffff;
+    /* White container */
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    /* Light shadow */
+}
+
+/* Title Styling */
+.title {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #007bff;
+    /* Blue for the main title */
+    text-shadow: 1px 1px 5px rgba(0, 123, 255, 0.3);
+}
+
+/* Video Wrapper Styling */
+.video-wrapper {
+    margin-bottom: 30px;
+    padding: 10px;
+    border: 2px solid #007bff;
+    /* Blue border */
+    border-radius: 15px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    background-color: #fefefe;
+    /* White background */
+}
+
+.video-wrapper:hover {
+    transform: scale(1.05);
+    box-shadow: 0 15px 30px rgba(0, 123, 255, 0.2);
+    /* Blue shadow on hover */
+}
+
+/* Video Title Styling */
+.video-title {
+    margin-bottom: 10px;
+    font-size: 1.8rem;
+    color: #333;
+    /* Dark gray for contrast */
+    text-shadow: 1px 1px 3px rgba(51, 51, 51, 0.2);
+}
+
+/* Video Player Styling */
+/* Default styling for the video player */
+.video-js {
+    width: 100%; /* Full width of the container */
+    height: 170px; /* Let JavaScript adjust the height */
+    display: block;
+    border-radius: 10px;
+    border: 2px solid #007bff;
+}
+
+/* Larger screens */
+@media (min-width: 768px) {
+    .video-js {
+        height: 450px; /* Example larger height */
+    }
+}
+
+@media (min-width: 1200px) {
+    .video-js {
+        max-height: 800px; /* Even larger height for very wide screens */
+    }
+}
+
+/* Download Button Styling */
+.download-button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #ffffff;
+    background-color: #007bff;
+    /* Blue background */
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.download-button:hover {
+    background-color: #0056b3;
+    /* Darker blue on hover */
+    box-shadow: 0 5px 15px rgba(0, 86, 179, 0.3);
+    /* Subtle shadow effect */
+}
+
+/* Footer Styling */
+footer {
+    margin-top: 20px;
+    text-align: center;
+    color: #666;
+    font-size: 0.9rem;
+    padding: 10px;
+    border-top: 1px solid #ddd;
+    /* Divider line */
+    background: #f1f1f1;
+    width: 100%;
+}

@@ -1,1 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Player</title>
+    <link href="https://vjs.zencdn.net/8.0.4/video-js.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="player-container">
+        <h1 class="title">🎬 Movie Player</h1>
 
+        <!-- Video Player 1 -->
+        <div class="video-wrapper">
+            <h2 class="video-title">🎥 Harry Potter: The Chamber of Secrets</h2>
+            <video
+                id="movie1"
+                class="video-js"
+                controls
+                preload="auto"
+                poster="https://image.tmdb.org/t/p/original/yHzyPJrVqlTySQ9mc379yxrLBYQ.jpg"
+                data-setup="{}"
+                >
+                <source src="https://archive.org/download/VideshiPicturesStartWithH1/Harry_Potter_The_Chamber_of_Secrets_2002_1080_Hindi_2CH_Eng_2CH_Fantasy.mp4" type="video/mp4">
+                <p class="vjs-no-js">
+                    To view this video, enable JavaScript or upgrade to a
+                    <a href="https://videojs.com/html5-video-support/" target="_blank">browser supporting HTML5 video</a>.
+                </p>
+            </video>
+            <a class="download-button" href="https://archive.org/download/VideshiPicturesStartWithH1/Harry_Potter_The_Chamber_of_Secrets_2002_1080_Hindi_2CH_Eng_2CH_Fantasy.mp4" download>
+                Download Movie
+            </a>
+        </div>
+
+        <!-- Video Player 2 -->
+        <div class="video-wrapper">
+            <h2 class="video-title">🎥 Harry Potter: The Sorcerer's Stone</h2>
+            <video
+                id="movie2"
+                class="video-js"
+                controls
+                preload="auto"
+                poster="https://image.tmdb.org/t/p/original/5jkE2SzR5uR2egEb1rRhF22JyWN.jpg"
+                data-setup="{}"
+                >
+                <source src="https://archive.org/download/VideshiPicturesStartWithH1/Harry_Potter_The_Sorcerers_Stone_2001_1080_Hindi_2CH_Eng_2CH_Fantasy.mp4" type="video/mp4">
+                <p class="vjs-no-js">
+                    To view this video, enable JavaScript or upgrade to a
+                    <a href="https://videojs.com/html5-video-support/" target="_blank">browser supporting HTML5 video</a>.
+                </p>
+            </video>
+            <a class="download-button" href="https://archive.org/download/VideshiPicturesStartWithH1/Harry_Potter_The_Sorcerers_Stone_2001_1080_Hindi_2CH_Eng_2CH_Fantasy.mp4" download>
+                Download Movie
+            </a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>
+            Powered by <strong>HackFlix</strong> and <strong>MediaVanced</strong>.
+            &copy; 2023-2025 All Rights Reserved.
+        </p>
+    </footer>
+
+    <script src="https://vjs.zencdn.net/8.0.4/video.min.js"></script>
+    <script src="script.js" type="text/javascript" charset="utf-8"></script>
+</body>
+</html>
